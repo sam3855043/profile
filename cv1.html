@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .sidebar {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+        }
+        .sidebar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .sidebar h2, .sidebar p {
+            margin: 10px 0;
+            text-align: left;
+        }
+        .sidebar ul {
+            /*list-style: none;*/
+            padding: 0;
+            list-style-position: inside;
+            
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+            font-size: 14px;
+            list-style-position: inside;
+            text-align: left;
+            padding-left: 1.5em;  /* 整體左邊距 */
+            text-indent: -1.5em;  /* 文字左邊距 */
+        }
+        
+        ul.contact {
+            list-style: none;
+            padding: 0;
+        }
+        ul.contact li {
+            margin: 10px 0;
+            font-size: 14px;
+            
+        }
+        .main-content {
+            padding: 20px;
+            width: 70%;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        /*.section h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            color: #007BFF;
+        }*/
+        .section h2 {
+            border-bottom: 2px solid #4987cb;
+            padding-bottom: 5px;
+            color: #4179b6;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+        .section li{
+            margin: 10px 0;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #007BFF;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #007BFF;
+        }
+        .timeline-item {
+            position: relative;
+            padding-bottom: 20px;
+        }
+        p.section{
+            font-size: 20px;
+            font-weight: bold;
+            border-bottom: 2px solid #65798f
+        }
+    </style>
+</hea d>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="./res/placehold.webp" alt="Profile Photo">
+            <h2>Samuel Chuang</h2>
+            <p>Software Engineer</p>
+            <p class="section">CONTACT</p>
+            <ul class="contact">
+                <li>📞 +886-988-068-239</li>
+                <li>📧 samuel780924@gmail.com</li>
+                <li>📍 Taichung City, Taiwan</li>
+                <li>🌐 linkedin.com/in/samuel-chuang-140b4888</li>
+            </ul>
+            <p class="section">Education</p>
+            <p>2013-2016</p>
+            <ul>
+            <li>National Kaohsiung First University of Science and Technology</li>
+            </ul>
+            <p>2009-2013</p>
+            <ul>
+            <li>Master & Bachelor of Electrical and Electronics Engineering</li>
+            </ul>
+            <p class="section">Skills</p>
+            <ul>
+                <li>JavaScript Libraries</li>
+                <li>HTML, CSS, AJAX</li>
+                <li>Genero 4GL, C/C++</li>
+                <li>Python, PHP</li>
+                <li>VMWare ESXi & vSphere</li>
+                <li>Software Infrastructure</li>
+                <li>Web Engineering</li>
+            </ul>
+            <p class="section">Languages</p>
+            <ul>
+                <li>English (Fluent)</li>
+                <li>Chinese (Native)</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="section">
+                <h2>Profile</h2>
+                <p>Currently, I am a software engineer at Digiwin. I have a passion for programming and excel in communication and teamwork. As a team leader, I’ve successfully managed diverse projects.</p>
+                <p>Additionally, I had the privilege of engaging in two technical exchanges with your company, collaborating on brainstorming sessions and solving technical challenges.</p>
+            </div>
+            <div class="section">
+                <h2>Work Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Digiwin Software Co., Ltd. (2021 - Present)</h3>
+                        <p>Software Engineer - Developing system and database tools:</p>
+                        <ul>
+                            <li>ERP backup tool ensuring data integrity.</li>
+                            <li>Maintaining ERP developer servers (Apache & FastCGI).</li>
+                            <li>Managing vSphere and host resource distribution.</li>
+                            <li>Conducting performance testing for Kingbase and MogDB.</li>
+                            <li>Participated in migrating T100 ERP to China’s database solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>The Church in Taipei Information Center (2019 - 2021)</h3>                   
+                        <p>Software Engineer - Developed backend & frontend systems:</p>
+                        <ul>
+                            <li>Developed backend of Saint Management System (Node.js, Egg.js).</li>
+                            <li>Frontend development using JavaScript & React.</li>
+                            <li>Migrating on-premise database to AWS RDS.</li>
+                            <li>Transferring church website to AWS S3.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
