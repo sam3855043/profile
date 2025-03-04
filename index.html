@@ -62,6 +62,13 @@
             font-size: 14px;
             
         }
+        ul.section li {
+            word-wrap: break-word;        /* 允許長單字換行 */
+            overflow-wrap: break-word;    /* 現代瀏覽器支援的屬性 */
+            max-width: 100%;             /* 限制最大寬度 */
+            white-space: normal;         /* 允許自動換行 */
+            padding-right: 10px;         /* 右側留些間距 */
+        }
         .main-content {
             padding: 20px;
             width: 70%;
@@ -117,6 +124,19 @@
             font-weight: bold;
             border-bottom: 2px solid #65798f
         }
+        .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        }
+        
+        .photo-gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
     </style>
 </hea d>
 <body>
@@ -126,7 +146,7 @@
             <h2>Samuel Chuang</h2>
             <p>Software Engineer</p>
             <p class="section">CONTACT</p>
-            <ul class="contact">
+            <ul class="section">
                 <li>📞 +886-988-068-239</li>
                 <li>📧 samuel780924@gmail.com</li>
                 <li>📍 Taichung City, Taiwan</li>
@@ -177,6 +197,85 @@
                             <li>Participated in migrating T100 ERP to China’s database solutions.</li>
                             <li>Developed a system for managing software licenses.</li>
                             <li>Participating MogDB OCI developer and promote efficiency SQL on MogDB and Kingbase</li>
+                            <li>Contactor of 4js RD department, responsible for the development of the 4js solution.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>The Church in Taipei Information Center (2019 - 2021)</h3>                   
+                        <p>Software Engineer - Developed backend & frontend systems:</p>
+                        <ul>
+                            <li>Developed backend of Saint Management System (Node.js, Egg.js).</li>
+                            <li>Frontend development using JavaScript & React.</li>
+                            <li>Migrating on-premise database to AWS RDS.</li>
+                            <li>Transferring church website to AWS S3.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <img src="./res/448738.jpg" alt="Profile Photo">
+            <h2>Samuel Chuang</h2>
+            
+            <p class="section">Personality</p>
+            <ul class="section">
+                <li>Innovative Problem Solver </li>
+                <li>Strategic Thinker & Leader</li>
+                <li>Adaptable & Eager Learner –</li>
+                <li>Effective Communicator & Team Player </li>
+            </ul>
+            <p class="section">Education</p>
+            <p>2013-2016</p>
+            <ul>
+            <li>National Kaohsiung First University of Science and Technology</li>
+            </ul>
+            <p>2009-2013</p>
+            <ul>
+            <li>Master & Bachelor of Electrical and Electronics Engineering</li>
+            </ul>
+            <p class="section">Skills</p>
+            <ul>
+                <li>JavaScript Libraries</li>
+                <li>HTML, CSS, AJAX</li>
+                <li>Genero 4GL, C/C++</li>
+                <li>Python, PHP</li>
+                <li>VMWare ESXi & vSphere</li>
+                <li>Software Infrastructure</li>
+                <li>Web Engineering</li>
+            </ul>
+            <p class="section">Languages</p>
+            <ul>
+                <li>English (Fluent)</li>
+                <li>Chinese (Native)</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="section">
+                <h2>Contactor</h2>
+                <div class="photo-gallery">
+                    <img src="./res/visited.jpg" alt="Profile Photo">
+                    <img src="./res/visited2.jpg" alt="Profile Photo">
+                    <img src="./res/visited3.jpg" alt="Profile Photo">
+                    <img src="./res/visited4.jpg" alt="Profile Photo">
+                </div>
+            </div>
+            <div class="section">
+                <h2>Work Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Digiwin Software Co., Ltd. (2021 - Present)</h3>
+                        <p>Software Engineer - Developing system and database tools:</p>
+                        <ul>
+                            <li>ERP backup tool ensuring data integrity.</li>
+                            <li>Maintaining ERP developer servers (Apache & FastCGI).</li>
+                            <li>Managing vSphere and host resource distribution.</li>
+                            <li>Conducting performance testing for Kingbase and MogDB.</li>
+                            <li>Participated in migrating T100 ERP to China’s database solutions.</li>
+                            <li>Developed a system for managing software licenses.</li>
+                            <li>Participating MogDB OCI developer and promote efficiency SQL on MogDB and Kingbase</li>
+                            <li>Contactor of 4js RD department, responsible for the development of the 4js solution.</li>
                         </ul>
                     </div>
                     <div class="timeline-item">
