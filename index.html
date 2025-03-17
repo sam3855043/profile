@@ -137,6 +137,55 @@
             object-fit: cover;
             border-radius: 5px;
         }
+               
+ 
+            .resources {
+                list-style: none;
+                padding: 0;
+            }
+            
+            .resources li {
+                margin: 10px 0;
+                transition: transform 0.2s;
+            }
+            
+            .resources li:hover {
+                transform: translateX(5px);
+            }
+            
+            .resources a {
+                color: #4179b6;
+                text-decoration: none;
+                margin-left: 10px;
+            }
+            
+            .resources a:hover {
+                text-decoration: underline;
+            }
+            
+            .resources i {
+                width: 1px;
+                color: #65798f;
+                margin-left: 20px;
+                color: #65798f;
+                display: inline-block;
+                text-align: center;  /* icon置中 */
+            }
+            .photo-description {
+                text-align: center;
+                margin: 20px 0;
+                color: #65798f;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+
+            .photo-section {
+                margin-bottom: 30px;
+            }
+        </style>
+        
+        <!-- 加入 Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </style>
 </hea d>
 <body>
@@ -180,8 +229,11 @@
         <div class="main-content">
             <div class="section">
                 <h2>Profile</h2>
+
+                <p>I come from a Christian family and am the eldest of four siblings. Growing up, I developed strong leadership, teamwork, and problem-solving skills. I am passionate about learning new technologies and excel in working under pressure to ensure project success.</p>
+                <p> With effective communication and coordination skills, I bridge cross-functional teams to facilitate technical collaboration and issue resolution. Additionally, I take an active role in leading teams, setting project goals, and implementing strategies to maximize performance and efficiency.</p>
                 <p>Currently, I am a software engineer at Digiwin. I have a passion for programming and excel in communication and teamwork. As a team leader, I’ve successfully managed diverse projects.</p>
-                <p>Additionally, I had the privilege of engaging in two technical exchanges with your company, collaborating on brainstorming sessions and solving technical challenges.</p>
+                
             </div>
             <div class="section">
                 <h2>Work Experience</h2>
@@ -223,27 +275,33 @@
             <ul class="section">
                 <li>Innovative Problem Solver </li>
                 <li>Strategic Thinker & Leader</li>
-                <li>Adaptable & Eager Learner –</li>
+                <li>Adaptable & Eager Learner </li>
                 <li>Effective Communicator & Team Player </li>
             </ul>
-            <p class="section">Education</p>
-            <p>2013-2016</p>
+            <p class="section">Club</p>
+            <p>inchrist_song 2014-2015</p>
             <ul>
-            <li>National Kaohsiung First University of Science and Technology</li>
+            <li>Committee President</li>
             </ul>
-            <p>2009-2013</p>
-            <ul>
-            <li>Master & Bachelor of Electrical and Electronics Engineering</li>
-            </ul>
-            <p class="section">Skills</p>
-            <ul>
-                <li>JavaScript Libraries</li>
-                <li>HTML, CSS, AJAX</li>
-                <li>Genero 4GL, C/C++</li>
-                <li>Python, PHP</li>
-                <li>VMWare ESXi & vSphere</li>
-                <li>Software Infrastructure</li>
-                <li>Web Engineering</li>
+            
+            <p class="section">Personal Resource</p>
+            <ul class="resources">
+                <li>
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/sam3855043" target="_blank">Github Profile</a>
+                </li>
+                <li>
+                    <i class="fab fa-medium"></i>
+                    <a href="https://medium.com/" target="_blank">Medium Blog</a>
+                </li>
+                <li>
+                    <i class="fas fa-church"></i>
+                    <a href="https://v2.chlife-stat.org/" target="_blank">Saint Rollcall Management System</a>
+                </li>
+                <li>
+                    <i class="fas fa-book"></i>
+                    <a href="https://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=v.HvGm/record?r1=1&h1=0#XXX" target="_blank">Master Thesis</a>
+                </li>
             </ul>
             <p class="section">Languages</p>
             <ul>
@@ -252,41 +310,56 @@
             </ul>
         </div>
         <div class="main-content">
-            <div class="section">
-                <h2>Contactor</h2>
-                <div class="photo-gallery">
-                    <img src="./res/visited.jpg" alt="Profile Photo">
-                    <img src="./res/visited2.jpg" alt="Profile Photo">
-                    <img src="./res/visited3.jpg" alt="Profile Photo">
-                    <img src="./res/visited4.jpg" alt="Profile Photo">
-                </div>
-            </div>
+            
             <div class="section">
                 <h2>Work Experience</h2>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <h3>Digiwin Software Co., Ltd. (2021 - Present)</h3>
-                        <p>Software Engineer - Developing system and database tools:</p>
+                        <h3>Taiwan High Speed Rail LTD. (2014 - 2015)</h3>
+                        <p>Software Engineer & PM - Developing system and database tools:</p>
+                        <p>Taiwan High-Speed Rail Industry-Academia Collaboration | Hardware Development & Monitoring System Design</p>
                         <ul>
-                            <li>ERP backup tool ensuring data integrity.</li>
-                            <li>Maintaining ERP developer servers (Apache & FastCGI).</li>
-                            <li>Managing vSphere and host resource distribution.</li>
-                            <li>Conducting performance testing for Kingbase and MogDB.</li>
-                            <li>Participated in migrating T100 ERP to China’s database solutions.</li>
-                            <li>Developed a system for managing software licenses.</li>
-                            <li>Participating MogDB OCI developer and promote efficiency SQL on MogDB and Kingbase</li>
-                            <li>Contactor of 4js RD department, responsible for the development of the 4js solution.</li>
+
+                            <li>MOBALINE Electronic Clock Reverse Engineering:</li>
+                            <li>Analyzed ATMEL AT89C51 MCU signals, developed a time synchronization algorithm, and built an NTP network clock system.</li>
+                            <li>Railway Switch Monitoring System Development:</li>
+                            <li>Integrated x86 industrial computers, 4G LTE, MODBUS temperature and humidity sensors, and USB cameras.</li>
+                            <li>Developed C# monitoring software and a web-based monitoring platform (JavaScript, PHP) for real-time monitoring and data management.</li>
+                            <li>Industry-Academia Collaboration Projects:</li>
+                            <li>Game equipment for Swan Castle’s Handicapped Foundation</li>
+                            <li>Taiwan High-Speed Rail (THSR) time conversion system </li>
+                            <li>Taiwan High-Speed Rail (THSR) railroad switch monitoring system</li>
                         </ul>
                     </div>
-                    <div class="timeline-item">
-                        <h3>The Church in Taipei Information Center (2019 - 2021)</h3>                   
-                        <p>Software Engineer - Developed backend & frontend systems:</p>
-                        <ul>
-                            <li>Developed backend of Saint Management System (Node.js, Egg.js).</li>
-                            <li>Frontend development using JavaScript & React.</li>
-                            <li>Migrating on-premise database to AWS RDS.</li>
-                            <li>Transferring church website to AWS S3.</li>
-                        </ul>
+                    
+                </div>
+            </div>
+            <div class="section">
+                <h2>Contactor</h2>
+                <div class="photo-section">
+                    <div class="photo-gallery">
+                        <img src="./res/switch.jpg" alt="Switch Photo">
+                        <img src="./res/switch2.jpg" alt="Switch Photo">
+                        <img src="./res/switch3.jpg" alt="Switch Photo">
+                        <img src="./res/switch4.jpg" alt="Switch Photo">
+                        <img src="./res/switch5.jpg" alt="Switch Photo">
+                    </div>
+                    <div class="photo-description">
+                        High-Speed Railway Turnout Monitoring System Development – Integration of Industrial Computer, 4G LTE, MODBUS Temperature and Humidity Sensor, and USB Camera.
+                    </div>
+                </div>
+                
+                <div class="photo-section">
+                    <div class="photo-gallery">
+                        <img src="./res/visited.jpg" alt="Visit Photo">
+                        <img src="./res/visited2.jpg" alt="Visit Photo">
+                        <img src="./res/visited3.jpg" alt="Visit Photo">
+                        <img src="./res/visited4.jpg" alt="Visit Photo">
+                        <img src="./res/visited5.jpg" alt="Visit Photo">
+                        <img src="./res/visited6.jpg" alt="Visit Photo">
+                    </div>
+                    <div class="photo-description">
+                        4js Technology Exchange and Training.
                     </div>
                 </div>
             </div>
