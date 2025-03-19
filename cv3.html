@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Chuang - Software Engineer</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .header img {
+            width: 200px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid var(--secondary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .header img:hover {
+            transform: scale(1.05);
+        }
+
+        .header-text h1 {
+            margin: 0;
+            font-size: 42px;
+            color: var(--primary-color);
+        }
+
+        .header-text h2 {
+            margin: 10px 0;
+            font-size: 24px;
+            color: var(--secondary-color);
+        }
+
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background: var(--light-bg);
+            border-radius: 10px;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            font-size: 24px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        .info-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 15px 0;
+            transition: transform 0.2s ease;
+        }
+
+        .contact-info p:hover {
+            transform: translateX(10px);
+        }
+
+        .contact-info svg {
+            color: var(--secondary-color);
+        }
+
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary-color);
+        }
+
+        .experience-section ul,
+        .education-section ul,
+        .skills-section ul {
+            padding-left: 20px;
+        }
+
+        .experience-section li,
+        .education-section li,
+        .skills-section li {
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .experience-section li::before,
+        .education-section li::before,
+        .skills-section li::before {
+            content: "•";
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 20px;
+            }
+
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-text h1 {
+                font-size: 32px;
+            }
+
+            .header-text h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="res/myphoto.jpg" alt="Samuel Chuang">
+            <div class="header-text">
+                <h1>Samuel Chuang</h1>
+                <h2>Software Engineer</h2>
+            </div>
+        </div>
+
+        <div class="content section">
+            <p>
+                I am a software engineer specializing in ERP development, virtualization, and database optimization.
+                Proficient in C/C++, Python, and Genero 4GL, I thrive in cross-team collaboration and problem-solving.
+                I aim to become a system architect, focusing on enterprise system design, optimization, and leading
+                technical teams to tackle critical challenges.
+            </p>
+        </div>
+
+        <div class="info-container section">
+            <div class="info-column">
+                <h3>About Me</h3>
+                <p>ERP Development | Virtualization | Database Optimization</p>
+                <p>Specializing in system architecture and performance tuning.</p>
+            </div>
+
+            <div class="info-column contact-info">
+                <h3>Contact Information</h3>
+                <p>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.62 10.79a15.005 15.005 0 0 0 6.59 6.59l2.2-2.2a1.5 1.5 0 0 1 1.5-.38 10.051 10.051 0 0 0 3.19.51 1.5 1.5 0 0 1 1.5 1.5v3.75a1.5 1.5 0 0 1-1.5 1.5A18.505 18.505 0 0 1 3 4.5a1.5 1.5 0 0 1 1.5-1.5h3.75a1.5 1.5 0 0 1 1.5 1.5c0 1.1.17 2.17.51 3.19a1.5 1.5 0 0 1-.38 1.5l-2.2 2.2z"/>
+                    </svg>
+                    +886-988-068-239
+                </p>
+                <p>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 13.5l8-6V6l-8 6-8-6v1.5l8 6z"/>
+                    </svg>
+                    <a href="mailto:samuel780924@gmail.com">samuel780924@gmail.com</a>
+                </p>
+                <p>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 3h-4c-1.1 0-2 .9-2 2v4h-2V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 19H5V5h4v14zm10 0h-4V5h4v14z"/>
+                    </svg>
+                    <a href="https://www.linkedin.com/in/samuel-chuang-140b4888" target="_blank">LinkedIn Profile</a>
+                </p>
+                <p>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    16F.-6, No. 1-150, Wuquan Rd, West Dist., Taichung City 403028, Taiwan (R.O.C.)
+                </p>
+            </div>
+        </div>
+
+        <div class="experience-section section">
+            <h3>Work Experience</h3>
+            <p><strong>Software Engineer</strong> at <strong>Digiwin Software Co., Ltd.</strong> (2021 - 2025)</p>
+            <p>Currently, I work as a <strong>Software Engineer</strong> at <strong>Digiwin Software Company</strong>, focusing on <strong>ERP system development and maintenance, virtualization, server management, and database optimization.</strong></p>
+            <ul>
+                <li><strong>ERP Optimization:</strong> Enhanced T100 and GP system compatibility, optimized RHEL parameters, and improved large-scale connection stability.</li>
+                <li><strong>System Architecture & Maintenance:</strong> Managed VMware hosts, Linux/Windows servers, and handled hardware installation and maintenance.</li>
+                <li><strong>Database Management:</strong> Maintained Oracle databases, conducted performance testing and optimization.</li>
+                <li><strong>Domestic Database Adaptation:</strong> Participated in Kingbase and MogDB performance testing and ERP migration projects, reducing enterprise database procurement costs by 20-30%.</li>
+                <li><strong>T100 Historical Data Segmentation Project:</strong>
+                    <ul>
+                        <li>Migrated 10-20 years of historical data, improving query performance and <strong>reducing backup time by over 30%.</strong></li>
+                        <li>Ensured <strong>100% customer issue resolution</strong>, preventing disruptions to operations.</li>
+                    </ul>
+                </li>
+                <li><strong>License Management System Optimization:</strong> Strengthened license security, reducing unauthorized access risks, ensuring accurate user count tracking, and improving system stability.</li>
+                <li><strong>2024 Best Technical Development Award:</strong> Recognized for outstanding contributions to technical development.</li>
+            </ul>
+            <h3>Technical Coordination & Problem-Solving</h3>
+            <ul>
+                <li><strong>Coordinated with product teams, application departments, and Chinese clients</strong> to collect server logs and report issues to 4js's RD Center in France, resolving component bugs.</li>
+                <li><strong>Decomposed application processes into modular sections</strong>, conducted unit testing, and cross-checked Apache FastCGI logs and Wireshark packet captures to accurately pinpoint issues.</li>
+                <li><strong>Successfully prompted 4js to resolve bugs</strong>, eliminating application crashes and enhancing system stability.</li>
+            </ul>
+            <h3>Team Process Optimization & Database Performance Analysis </h3>
+            <ul>
+                <li><strong>Optimized team development processes</strong>, establishing project milestones, such as Kingbase database performance optimization, with clear key objectives.</li>
+                <li><strong>Collaborated with database experts</strong> to analyze SQL optimization strategies, refining   </li>
+            </ul>
+            <h3>Mentorship & SQL Discussions</h3> 
+            <ul>
+                <li><strong>Guided new team members in understanding reporting procedures and learning SQL performance testing methodologies.</strong></li>
+                <li><strong>Conducted SQL query optimization discussions</strong>, identifying full-table scans and evaluating query cost reduction strategies.</li>
+                <li><strong>Led comparative analysis of GaussDB and Oracle</strong>, providing professional recommendations for optimal database application scenarios.</li>
+            </ul>
+
+            <p><strong>Software Engineer</strong> at <strong>The Church in Taipei Information Center</strong> (2019 - 2021)</p>
+            <div>I self-learned React and successfully developed the second version of the church attendance system:</div>
+            <ul>
+                <li>Utilized Ant Design and Egg.js frameworks for rapid development.</li>
+                <li>Built a full-stack architecture, ensuring seamless integration between front-end and back-end.</li>
+                <li>Enhanced user experience and system maintainability.</li>
+                <li>Streamlined attendance management workflows, improving efficiency.</li>
+            </ul>
+        </div>
+
+        <div class="education-section section">
+            <h3>Education</h3>
+            <p><strong>Master & Bachelor of Electrical and Electronics Engineering</strong> at <strong>National Kaohsiung First University of Science and Technology</strong> (2009 - 2013)</p>
+            <ul>
+                <li>Specialized in electrical engineering, electronics, and computer science.</li>
+                <li>Developed a strong foundation in software engineering and system design.</li>
+                <li>Participated in industry-academia projects, including:</li>
+                <li>Electroplating solution detection system</li>
+                <li>Game equipment for Swan Castle’s Handicapped Foundation</li>
+                <li>Taiwan High-Speed Rail (THSR) time conversion system</li>
+                <li>THSR railroad switch monitoring system</li>
+            </ul>
+            <p><strong>Master & Bachelor of Electrical and Electronics Engineering</strong> at <strong>National Kaohsiung First University of Science and Technology</strong> (2009 - 2013)</p>
+        </div>
+
+        <div class="skills-section section">
+            <h3>Skills</h3>
+            <ul>
+                <li>JavaScript Libraries</li>
+                <li>HTML, CSS, AJAX</li>
+                <li>Genero 4GL, C/C++</li>
+                <li>Python, PHP</li>
+                <li>VMWare ESXi & vSphere</li>
+                <li>Software Infrastructure</li>
+                <li>Web Engineering</li>
+            </ul>
+            <h3>Languages</h3>
+            <ul>
+                <li>English (Fluent)</li>
+                <li>Chinese (Native)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
